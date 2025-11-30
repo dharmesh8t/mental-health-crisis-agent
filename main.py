@@ -1,3 +1,4 @@
+72
 59
 70
 """Main entry point for mental health crisis support system."""
@@ -68,7 +69,6 @@ class CrisisOrchestrator:
         assessment = self.assessment_agent.assess(session_id, user_message)
         crisis_level = assessment.get("crisis_level", "low")
         print(f"  Crisis Level: {crisis_level}")
-        print(f"  Assessment: {assessment['response'][:100]}...")
 
         # Step 2: Safety Routing (Check for emergency)
         print("\n[Step 2] Running Safety Assessment...")
