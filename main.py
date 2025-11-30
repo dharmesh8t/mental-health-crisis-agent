@@ -55,7 +55,7 @@ class CrisisOrchestrator:
         """
         # Create session if needed
         if not session_id:
-            session_id = self.memory.create_session()
+            session_id = self.memory.create_session("user_1")
 
         print(f"\n{'='*60}")
         print(f"Processing Crisis Interaction - Session: {session_id}")
@@ -143,7 +143,7 @@ class CrisisOrchestrator:
         print("  - Personalized recovery planning")
         print("\n" + "-"*60 + "\n")
 
-        session_id = self.memory.create_session()
+        session_id = self.memory.create_session("user_1")
 
         while True:
             try:
